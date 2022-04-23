@@ -1,4 +1,3 @@
-
 // Whole page zoming
 if (outerWidth > 992) {$('body').css('max-width',`${outerWidth}px`)}
 
@@ -19,13 +18,13 @@ function nav() {
 document.onscroll = function() {nav()}
 
 
-// Slide show
+// Slideshow
 var slides = $('#slide').children('div'),
     slength = slides.length-1,
     index = 0;
 
 
-// Wall prev-next button
+// Slideshow effect prev-next button
 var prevBtn = $('#wall-prev'),
     nextBtn = $('#wall-next');
 
@@ -48,7 +47,7 @@ nextBtn.click(function() {
 });
 
 
-// Wall rings
+// Slideshow effect rings
 var ringHtml = '';
 for (let i=0; i<slides.length; i++) {
     ringHtml += `<span id="ring-${i}">&#8728;</span>`;
