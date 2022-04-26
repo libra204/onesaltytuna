@@ -1,0 +1,326 @@
+/* One Salty Tuna Menu Style */
+
+
+#menu-wallpaper {
+    overflow: visible;
+}
+
+#menu-wallpaper div:first-child {
+    height: 100%;
+    overflow: hidden;
+}
+#menu-wallpaper img {
+    height: 200%;
+}
+#menu-menu {
+    margin-top: 110px;
+}
+#menu-menu #dish-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+#menu-menu #dish-type div {
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.menu-current {
+    background-color: var(--main-color);
+    color: white;
+}
+.pick {
+    display: block !important;
+    position: absolute;
+    right: -5px;
+    bottom: 10px;
+    width: 60%;
+    text-align: center;
+    user-select: none;
+    color: black;
+}
+.pick p {
+    font-size: 10px;
+    display: inline-block;
+    margin: 1px !important;
+    border-radius: 50%;
+    text-align: center;
+    height: 18px;
+    width: 18px;
+    border: var(--main-color) solid 2px;
+    cursor: pointer;
+}
+.pick p:nth-child(2) {
+    cursor: default;
+    animation: none !important;
+}
+
+#order {
+    margin-bottom: 100px;
+    padding: 20px;
+    background-image: url(Images/wallpaper-2.5.jpg);
+    background-position: center;
+}
+#order > div {
+    border: var(--main-color) solid 3px;
+    position: relative;
+    padding: 3%;
+
+}
+#order-info h2 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+#order form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    overflow: visible;
+}
+#order-info h3 {
+    margin-left: 10px;
+    color: beige;
+}
+#order form input,  #order form textarea {
+    font-size: 12px;
+    width: 100%;
+    margin: 5px 10px;
+    padding: 5px;
+    background-color: #F2F2F2;
+}
+#order form input {
+    height: 32px;
+}
+#order form textarea {
+    overflow: hidden;
+    height: 80px;
+    resize: vertical;
+    font-family: unset;
+}
+#order #submit {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    box-shadow: none;
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-50%);
+}
+#detail {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 125px;
+    font-size: 12px;
+    color: beige;
+}
+#detail h3 {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 50px 0 0 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center
+}
+#order table {
+    margin: 50px 0;
+    width: 100%;
+    font-size: 12px;
+}
+table, thead, tbody, tr, td {
+    border: none;
+    border-collapse: collapse;
+    padding-left: 5px;
+}
+#order table thead {
+    background-color: var(--main-color);
+    line-height: 40px;
+    font-weight: bold;
+}
+#order table thead td:first-child {
+    width: 10%;
+}
+#order table thead td:nth-child(2) {
+    width: 35%;
+}
+#order table thead td {
+    width: 15%;
+}
+#order table tbody tr {
+    height: 40px;
+    background-color: white;
+}
+#order table tbody tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+#order table tfoot td {
+    font-weight: bold;
+    transform: translateY(10px);
+    position: relative;
+    height: 40px;
+}
+#order table tfoot td p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    text-align: center;
+    width: 110px;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (min-width: 601px) {
+    #menu-menu #dish-type div {
+        width: 15%;
+    }
+    #order {
+        padding: 50px;
+    }
+    #order-info h2 {
+        font-size: 35px;
+    }
+    #order form {
+        width: 60%;
+    }
+    #order form input {
+        height: 38px;
+    }
+    #order form textarea {
+        height: 100px;
+    }
+    #detail {
+        width: 150px;
+        font-size: 14px;
+    }
+    #detail h3 {
+        background-color: var(--main-color);
+        padding: 10px;
+        border-radius: 50px 0 0 50px;
+        font-size: 25px;
+        color: white;
+        text-align: center
+    }
+    #order table {
+        font-size: 14px;
+    }
+    #order table thead td:first-child {
+        width: 5%;
+    }
+    #order table thead td:nth-child(2) {
+        width: 30%;
+    }
+    #order table thead td {
+        width: 10%;
+    }
+    #order table tfoot td {
+        transform: translateY(20px);
+    }
+    #order table tfoot td p {
+        width: 150px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) {
+    #menu-menu {
+        margin-top: 150px;
+    }
+    #menu-menu #dish-type div:hover {
+        animation: change_bgcolor 0.3s forwards;
+    }
+    #menu-menu #dish-type {
+        line-height: 60px;
+        font-size: 18px;
+    }
+    #detail {
+        width: 240px;
+        font-size: 16px;
+    }
+    #detail h3 {
+        font-size: 35px;
+    }
+    .pick {
+        right: 0;
+    }
+    .pick p {
+        padding: 2px 0;
+        margin: 2px !important;
+        height: 22px;
+        width: 22px;
+        cursor: pointer;
+    }
+    .pick p:nth-child(2) {
+        cursor: default;
+        animation: none !important;
+    }
+    .pick p:hover {
+        animation: change_bgcolor 0.25s forwards;   
+    }
+    #order table thead td {
+        width: 20%;
+    }
+    #order table tfoot td {
+        height: 50px;
+    }
+    #order table tfoot td p {
+        width: 180px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    #order {
+        margin-bottom: 100px;
+    }
+    #order > div {
+        width: 60%;
+        margin: auto;
+    }
+    #order-info h3 {
+        margin-left: 20px;
+    }
+    #order form input,  #order form textarea {
+        margin: 5px 20px;
+        padding: 8px;
+    }
+    #order form textarea {
+        height: 120px;
+    }
+    #order #submit {
+        bottom: 1.5%;
+    }
+    #submit:hover {
+        animation: change_bgcolor 0.25s forwards;
+    }
+    #order table tfoot td:last-child {
+        font-size: 10px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    #detail {
+        width: 220px;
+        font-size: 16px;
+    }
+    .pick p {
+        font-size: 15px;
+        height: 30px;
+        width: 30px;
+    }
+}
