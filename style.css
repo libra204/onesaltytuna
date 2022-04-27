@@ -63,8 +63,8 @@ a {
     top: 50%;
     transform: translate(-50%, -100%);
 }
-#about, #menu, #news, footer, #about-special, #menu-menu {
-    margin: 10%;
+#about, #menu, #news, footer, #about-special, #menu-menu, #contact-form {
+    margin: 5%;
 }
 
 /* Navbar design*/
@@ -448,7 +448,7 @@ footer h3 {
     [id$=wallpaper] img {
         width: 100%;
     }
-    #about, #menu, #news, footer, #about-special, #menu-menu {
+    #about, #menu, #news, footer, #about-special, #menu-menu, #contact-form {
         margin: 10%;
     }
 
@@ -606,7 +606,7 @@ footer h3 {
         top: 80px;
         height: 350px;
     }
-    #about, #menu, #news, footer, #about-special, #menu-menu {
+    #about, #menu, #news, footer, #about-special, #menu-menu, #contact-form {
         margin: 5% 10%;
     }
 
